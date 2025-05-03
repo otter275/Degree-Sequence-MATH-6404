@@ -38,6 +38,7 @@ def havel_hakimi(deg_seq):
             # If any element goes below 0, it means there's an impossible requirement -> not graphic
             if seq[i] < 0:
                 return False
+        seq.sort(reverse=True) # keep order
  
 def example_usage():
     """
